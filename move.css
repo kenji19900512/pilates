@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+:root {
+    --bgc-color: #faeee7;
+  --headline-color: #33272a;
+  --paragraph-color: #594a4e;
+  --button-color: #ff8ba7;
+  --button_text-color: #33272a;
+  --stroke-color: #33272a;
+  --main-color: #fffffe;
+  --highlight-color: #ff8ba7;
+  --secondary-color: #ffc6c7;
+  --tertiary-color: #c3f0ca;
+}
+
+
+.fadeUpTrigger {
+    opacity: 0;
+}
+
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
